@@ -9,7 +9,7 @@ const App = () => (
 useEffect(() => {
   const links = document.querySelectorAll('link[rel="stylesheet"]');
   links.forEach(link => {
-    if (link.href.includes('main.846b06db.css')) {
+    if (link.href.includes('/main.846b06db.css')) {
       link.removeAttribute('rel'); // 🛠️ Remove the "rel" attribute
       // or link.parentNode?.removeChild(link) to delete it entirely
     }
